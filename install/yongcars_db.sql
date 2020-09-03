@@ -35,7 +35,7 @@ CREATE TABLE `booking_tb` (
   `dropoffDate` varchar(30) NOT NULL,
   `pickupTime` varchar(30) NOT NULL,
   `status` set('issued','in process','booked','cancelled') NOT NULL DEFAULT 'issued',
-  `date_added` varchar(30) NOT NULL DEFAULT current_timestamp(),
+  `date_added` varchar(30) NOT NULL,
   `mobile` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
